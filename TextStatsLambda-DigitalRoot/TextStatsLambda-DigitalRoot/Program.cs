@@ -74,7 +74,7 @@ namespace TextStatsLambda_DigitalRoot
         public static int NumberOfWords(string inputString)
         {
             Console.WriteLine("Number of words: " + inputString.Split(' ').Length);
-            return inputString.Split(' ').Length;
+            return inputString.Replace("  ", " ").Split(' ').Length;
         }
 
         /// <summary>
